@@ -1,0 +1,44 @@
+site_name: 'Documentation'
+site_description: 'Description of the documentation'
+site_url: 'http://docs.virtbox.com/'
+repo_url: 'https://git.cmlatitude.com/cml-vbx.git'
+theme: 'readthedocs'
+dev_addr: '127.0.0.1:8888'
+use_directory_urls: true
+strict: true
+markdown_extensions:
+  - admonition
+  - def_list
+  - footnotes
+  - tables
+  - mdx_grid_tables
+  - toc:
+      permalink: True
+
+pages:
+  
+  - 'Home': 'index.md'
+  - 'Get Started': 'get-started.md'
+  - 'Knowledge Base':  
+    - 'Ansible': 'knowledge-base/ansible.md'
+    - 'FUEL': 'knowledge-base/fuel.md'
+    - 'LVM': 'knowledge-base/lvm.md'
+    - 'Logging Monitoring Alerting': 'knowledge-base/lma.md'
+    - 'Openstack':
+      - 'Backup/Restore': 'knowledge-base/backup-restore.md'
+      - 'Cinder': 'knowledge-base/cinder.md'
+      - 'Glance': 'knowledge-base/glance.md'
+      - 'Neutron': 'knowledge-base/neutron.md'
+      - 'Nova': 'knowledge-base/nova.md'
+      - 'Swift': 'knowledge-base/swift.md'
+      - 'Upgrade Openstack': 'knowledge-base/upgrade-openstack.md'
+    - 'Markdown Markup': 'markup.md'
+  
+  - 'VirtBox documentation':
+    - 'Menegment-server': 'virtbox-docs/menegment-server.md'
+    - 'Rally':
+      - 'Rally Installation Guide': 'virtbox-docs/rally-install.md'
+      - 'Rally Benchmark OpenStak': 'virtbox-docs/rally-benchmark.md'
+      - 'Rally Verify OpenStack': 'virtbox-docs/rally-verify.md'
+      - 'RefStack': 'virtbox-docs/refstack.md'
+  - 'About': 'about.md'
